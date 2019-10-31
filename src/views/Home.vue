@@ -1,25 +1,23 @@
 <template>
-    <div>
-       <div class="bg">首页</div>
-       <div class="chart"></div>
-       <div class="content">
-           <ul>
-               <li></li>
-               <li></li>
-               <li></li>
-           </ul>
-       </div>
-       <div><p></p><p></p></div>
-       <div></div>
-       <div class="zixun">
-           <div class="L"></div>
-           <div></div>
-           <div CLASS="R"></div>
-       </div>
-       <div></div>
-       <div></div>
-
-
-
+  <div class="Home">
+    <div class="">
+      <img src="../assets/jk.jpg" alt="" />
     </div>
-</template>
+    <div class="padd">
+      <img src="../assets/dt.jpg" alt="" />
+    </div>
+    </div>
+    </template>
+<style lang="scss" scoped>
+.Home {
+  .padd {
+    padding-left: 100px;
+  }
+}
+
+</style>
+<script>
+export default {
+    
+}
+</script>
