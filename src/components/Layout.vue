@@ -10,7 +10,7 @@
           <router-link
             :to="'/' + item.id"
             tag="div"
-            @click="changeTab(index)"
+            @click.native="changeTab(index)"
             class="header-tab"
             :class="[index == activeIndex ? 'tab-active':'']"
             v-for="(item,index) in tabList"
@@ -82,11 +82,7 @@
       }
     }
   }
-  .tab-active {
-    color: red;
-    border-bottom: red 1.5px solid;
-    cursor: pointer;
-  }
+ 
  
   .yv-footer {
       height:240px;position:absolute;bottom:-1500px;left:0px;
@@ -122,6 +118,11 @@
         }
       }
     }
+  }
+   .tab-active {
+    color: red;
+    border-bottom: red 1.5px solid;
+    cursor: pointer;
   }
 }
 // .box {
@@ -178,7 +179,7 @@ export default {
     // },
     changeTab(index) {
       this.activeIndex = index;
-      console.log(index);
+      console.log("niaho ")
     }
   }
 };
